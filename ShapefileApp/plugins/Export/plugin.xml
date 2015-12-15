@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<plugin_info>
+<plugin_name>Export to Shapefile</plugin_name>
+<plugin_dir>ExportSHP.exe</plugin_dir>
+<plugin_description>Export a network from Hydra to a set of ESRI Shapefiles.</plugin_description>
+<plugin_epilog>
+    Written by Philipp Meier, philipp@diemeiers.ch
+    (c) Copyright 2015 Eawag: Swiss Federal Institute of Aquatic Science
+    and Technology
+    For more information visit www.hydraplatform.org
+</plugin_epilog>
+<smallicon>icon32.png</smallicon>
+<largeicon>icon128.png</largeicon>
+<mandatory_args>
+  <arg>
+    <name>Output folder</name>
+    <switch>-o</switch>
+    <multiple>N</multiple>
+    <argtype>path</argtype>
+    <help>The filename of the links to be imported.</help>
+  </arg>
+  <arg>
+      <name>Network ID</name>
+      <switch>-n</switch>
+      <multiple>N</multiple>
+      <argtype>network</argtype>
+      <help>ID of the network that will be exported.</help>
+  </arg>
+  <arg>
+      <name>Scenario ID</name>
+      <switch>-s</switch>
+      <multiple>N</multiple>
+      <argtype>scenario</argtype>
+      <help>ID of the scenario that will be exported.</help>
+  </arg>
+</mandatory_args>
+<switches>
+    <arg>
+        <name>Overwrite</name>
+        <switch>-x</switch>
+        <help>Overwrite existing shapefiles on export.</help>
+    </arg>
+</switches>
+</plugin_info>

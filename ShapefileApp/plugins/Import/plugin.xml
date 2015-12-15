@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<plugin_info>
+<plugin_name>Import Shapefile</plugin_name>
+<plugin_dir>ImportSHP.exe</plugin_dir>
+<plugin_description>Import a network saved as ESRI Shapefile into Hydra.</plugin_description>
+<plugin_epilog>
+    Written by Philipp Meier, philipp@diemeiers.ch
+    (c) Copyright 2015 Eawag: Swiss Federal Institute of Aquatic Science
+    and Technology
+    For more information visit www.hydraplatform.org
+</plugin_epilog>
+<smallicon>icon32.png</smallicon>
+<largeicon>icon128.png</largeicon>
+<mandatory_args>
+  <arg>
+    <name>Links file</name>
+    <switch>-il</switch>
+    <multiple>N</multiple>
+    <argtype>link</argtype>
+    <help>The filename of the links to be imported.</help>
+  </arg>
+</mandatory_args>
+<non_mandatory_args>
+  <arg>
+    <name>Nodes file</name>
+    <switch>-in</switch>
+    <multiple>N</multiple>
+    <argtype>node</argtype>
+    <help>The filename of the nodes to be imported. If no node file is specified, nodes are created automatically from the start and endpoints of links.</help>
+  </arg>
+</non_mandatory_args>
+</plugin_info>
