@@ -5,7 +5,7 @@
 <plugin_description>Export a network from Hydra to a set of ESRI Shapefiles.</plugin_description>
 <plugin_epilog>
     Written by Philipp Meier, philipp@diemeiers.ch
-    (c) Copyright 2015 Eawag: Swiss Federal Institute of Aquatic Science
+    (c) Copyright 2015, 2016 Eawag: Swiss Federal Institute of Aquatic Science
     and Technology
     For more information visit www.hydraplatform.org
 </plugin_epilog>
@@ -34,6 +34,33 @@
       <help>ID of the scenario that will be exported.</help>
   </arg>
 </mandatory_args>
+<non_mandatory_args>
+  <arg>
+    <name>Server URL</name>
+    <switch>-url</switch>
+    <multiple>N</multiple>
+    <argtype>URL</argtype>
+    <help> URL of HydraPlatform server (defaults to value specified in the
+        config file).
+    </help>
+  </arg>
+  <arg>
+    <name>Server user</name>
+    <switch>-u</switch>
+    <multiple>N</multiple>
+    <argtype>user</argtype>
+    <help> Username to log in to Hydra Platform server.
+    </help>
+  </arg>
+  <arg>
+    <name>Server password</name>
+    <switch>-p</switch>
+    <multiple>N</multiple>
+    <argtype>password</argtype>
+    <help> Password to log in to Hydra Platform server.
+    </help>
+  </arg>
+</non_mandatory_args>
 <switches>
     <arg>
         <name>Overwrite</name>
