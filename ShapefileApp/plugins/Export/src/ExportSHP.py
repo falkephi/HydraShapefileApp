@@ -21,7 +21,7 @@
 import os
 import sys
 
-sys.path.append(os.path.sep.join(['..', '..', '..', '..', 'lib']))
+sys.path.append(os.path.sep.join(['..', '..', '..', 'lib']))
 
 from hydra_network import HydraNetworkTree
 from shapefile_lib import ShapefileApp
